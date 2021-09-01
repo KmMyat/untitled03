@@ -23,15 +23,15 @@ def showing(Gender,TorNT,LorS):
     if Gender == 'B':
         last = 'Boy'
     inidir = 'photo/' + Gender + "/" + TorNT + "/" + LorS + "/"
+    
     st.write(inidir)
     st.write(os.listdir(inidir)[0])
-    '''
+    
     imagee= Image.open(inidir + os.listdir(inidir)[0])
     resized_image = imagee.resize((225,250),Image.ANTIALIAS)
-    
     st.image(resized_image, caption = 'This is your dream ' + last, width = 350)
-    
-    
+    '''
+ 
     st.image('photo/G/T/LH/GTLH.jpg')
     '''
     
