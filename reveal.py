@@ -26,18 +26,13 @@ def showing(Gender,TorNT,LorS):
         
     st.write('This is your dream' + last)
     inidir = 'photo/' + Gender + "/" + TorNT + "/" + LorS + "/"
-    '''
-    st.write(inidir)
-    st.write(os.listdir(inidir)[0])
-    '''
+
     
     imagee= Image.open(inidir + os.listdir(inidir)[0])
     resized_image = imagee.resize((225,250),Image.ANTIALIAS)
     st.image(resized_image,width = 400)
-    st.write('Hope you get a wonderful soulmate')
-    '''
-    st.image('photo/G/T/LH/GTLH.jpg')
-    '''
+    st.write('Hope you get a wonderful soulmate...<3')
+
     
     
 
@@ -69,11 +64,9 @@ def tatnotat(Gender):
 
 
 if startin == True and choice == 'Boy':
-    st.write('boy')
     tatnotat('B')
     
 
 if startin == True and choice == 'Girl':
-    st.write('girl')
     tatnotat('G')
 
