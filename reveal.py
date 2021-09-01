@@ -10,29 +10,32 @@ import os
 from PIL import Image
 
 
-st.write('Reveal Your Ideal Type')
+st.title('Reveal Your Ideal Type')
 st.image('photo/front.jpg')
-choice = st.selectbox('Make a choice',('Boy','Girl'))
+choice = st.selectbox('Choose your partner..',('Boy','Girl'))
 startin = st.checkbox('start')
 
 
 
 def showing(Gender,TorNT,LorS):
-    st.write(Gender,TorNT,LorS)
+    
     if Gender == 'G':
         last = 'Girl'
     if Gender == 'B':
         last = 'Boy'
+        
+    st.write('This is your dream' + last)
     inidir = 'photo/' + Gender + "/" + TorNT + "/" + LorS + "/"
-    
+    '''
     st.write(inidir)
     st.write(os.listdir(inidir)[0])
+    '''
     
     imagee= Image.open(inidir + os.listdir(inidir)[0])
     resized_image = imagee.resize((225,250),Image.ANTIALIAS)
-    st.image(resized_image, caption = 'This is your dream ' + last, width = 350)
+    st.image(resized_image,width = 400)
+    st.write('Hope you get a wonderful soulmate')
     '''
- 
     st.image('photo/G/T/LH/GTLH.jpg')
     '''
     
