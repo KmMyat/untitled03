@@ -10,7 +10,7 @@ import os
 from PIL import Image
 
 
-st.title('Reveal Your Ideal Type')
+st.write("What's up")
 st.image('photo/front.jpg')
 choice = st.selectbox('Choose your partner..',('Boy','Girl'))
 startin = st.checkbox('start')
@@ -30,7 +30,7 @@ def showing(Gender,TorNT,LorS):
     
     imagee= Image.open(inidir + os.listdir(inidir)[0])
     resized_image = imagee.resize((225,250),Image.ANTIALIAS)
-    st.image(resized_image,width = 400)
+    st.image(resized_image)
     st.write('Hope you get a wonderful soulmate...<3')
 
     
