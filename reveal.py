@@ -30,8 +30,8 @@ def showing(Gender,TorNT,LorS):
     
     imagee= Image.open(inidir + os.listdir(inidir)[0])
     resized_image = imagee.resize((225,250),Image.ANTIALIAS)
-    st.image(resized_image)
-    st.write('Hope you get a wonderful soulmate...<3')
+    st.image(resized_image, caption = 'Hope you get a wonderful soulmate...<3')
+    
 
     
     
