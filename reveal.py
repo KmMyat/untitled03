@@ -26,7 +26,8 @@ def showing(Gender,TorNT,LorS):
     imagee= Image.open(inidir + os.listdir(inidir)[0])
     resized_image = imagee.resize((225,250),Image.ANTIALIAS)
     st.image(imagee, caption = 'This is your dream ' + last, width = 350)'''
-    st.image('photo\G\T\LH\GTLH.jpg')
+    st.image('photo/G/T/LH/GTLH.jpg')
+    
     
 
 def LHSH(Gender,TorNT):
