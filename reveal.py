@@ -11,6 +11,7 @@ from PIL import Image
 
 
 st.write('Reveal Your Ideal Type')
+st.image('photo\front.jpg)
 choice = st.selectbox('Make a choice',('Boy','Girl'))
 startin = st.checkbox('start')
 
