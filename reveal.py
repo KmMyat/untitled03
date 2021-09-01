@@ -10,7 +10,7 @@ import os
 from PIL import Image
 
 
-st.write("What's up")
+st.write("YO...")
 st.image('photo/front.jpg')
 choice = st.selectbox('Choose your partner..',('Boy','Girl'))
 startin = st.checkbox('start')
