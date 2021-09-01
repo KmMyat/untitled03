@@ -22,7 +22,7 @@ def showing(Gender,TorNT,LorS):
         last = 'Girl'
     if Gender == 'B':
         last = 'Boy'
-    inidir = 'main\\untitled03\\photo\\' + Gender + "\\" + TorNT + "\\" + LorS + "\\"
+    inidir = 'untitled03\\photo\\' + Gender + "\\" + TorNT + "\\" + LorS + "\\"
     imagee= Image.open(inidir + os.listdir(inidir)[0])
     resized_image = imagee.resize((225,250),Image.ANTIALIAS)
     st.image(imagee, caption = 'This is your dream ' + last, width = 350)
