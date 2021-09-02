@@ -35,9 +35,9 @@ def showing(Gender,TorNT,LorS):
     imagee= Image.open(inidir + os.listdir(inidir)[countie])
     resized_image = imagee.resize((225,250),Image.ANTIALIAS)
     st.image(imagee, caption = 'Hope you get a wonderful soulmate...<3')
+    st.image(imagee, width = 350, caption = 'width350')
     st.image(resized_image)
-    if resized_image == True:
-        st.button('New round')
+    st.button('New round')
     
 
     
