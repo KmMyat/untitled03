@@ -33,8 +33,8 @@ def showing(Gender,TorNT,LorS):
     countie = finding(inidir)
     
     imagee= Image.open(inidir + os.listdir(inidir)[countie])
-    resized_image = imagee.resize((225,250),Image.ANTIALIAS)
-    st.image(resized_image, caption = 'Hope you get a wonderful soulmate...<3')
+    '''resized_image = imagee.resize((225,250),Image.ANTIALIAS)'''
+    st.image(imagee, caption = 'Hope you get a wonderful soulmate...<3')
     
 
     
