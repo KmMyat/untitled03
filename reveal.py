@@ -36,7 +36,7 @@ def showing(Gender,TorNT,LorS):
     st.image(imagee, width = 400, caption = 'Hope you get a wonderful soulmate...<3')
     col1,col2 = st.columns(2)
     with col1:
-        st.write('We will show you another' + last + 'with this type')
+        st.write('Wanna try your miracle next time..! ')
     with col2:
         st.button('Click here')
     
