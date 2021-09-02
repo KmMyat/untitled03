@@ -33,11 +33,12 @@ def showing(Gender,TorNT,LorS):
     countie = finding(inidir)
     
     imagee= Image.open(inidir + os.listdir(inidir)[countie])
-    resized_image = imagee.resize((225,250),Image.ANTIALIAS)
-    st.image(imagee, caption = 'Hope you get a wonderful soulmate...<3')
-    st.image(imagee, width = 350, caption = 'width350')
-    st.image(resized_image)
-    st.button('New round')
+    st.image(imagee, width = 400, caption = 'Hope you get a wonderful soulmate...<3')
+    col1,col2 = st.columns(2)
+    with col1:
+        st.wirte('We will show you another' + last + 'with this type')
+    with col2:
+        st.button('Click here')
     
 
     
