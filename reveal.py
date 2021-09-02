@@ -12,7 +12,7 @@ import random
 
 st.write("YO...")
 st.image('photo/front.jpg')
-choice = st.selectbox('Choose your partner..',('Boy','Girl'))
+choice = st.selectbox('Choose your partner..',('Girl','Boy'))
 startin = st.checkbox('start')
 
 def finding(loc):
