@@ -8,14 +8,17 @@ Created on Wed Sep  1 15:34:10 2021
 import streamlit as st
 import os
 from PIL import Image
-
+import random
 
 st.write("YO...")
 st.image('photo/front.jpg')
 choice = st.selectbox('Choose your partner..',('Boy','Girl'))
 startin = st.checkbox('start')
 
-
+def finding(loc):
+    total = len(os.listdir(loc)) - 1
+    count = random.randint(0,total)
+    return count
 
 def showing(Gender,TorNT,LorS):
     
@@ -26,9 +29,10 @@ def showing(Gender,TorNT,LorS):
         
     st.write('This is your dream' + last)
     inidir = 'photo/' + Gender + "/" + TorNT + "/" + LorS + "/"
-
     
-    imagee= Image.open(inidir + os.listdir(inidir)[0])
+    countie = finding(inidir)
+    
+    imagee= Image.open(inidir + os.listdir(inidir)[countie])
     resized_image = imagee.resize((225,250),Image.ANTIALIAS)
     st.image(resized_image, caption = 'Hope you get a wonderful soulmate...<3')
     
